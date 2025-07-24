@@ -28,8 +28,8 @@ public class Employee {
     private Department managedDepartment;
 
     @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "worker_department_id",referencedColumnName = "id")
-    @JoinTable(name = "worker_department_mapping")
+    @JoinColumn(name = "worker_department_id",referencedColumnName = "id")
+//    @JoinTable(name = "worker_department_mapping")
     @JsonIgnore
     private Department workerDepartment;
 

@@ -24,7 +24,7 @@ public class DoctorDepartment{
 
     @OneToOne
     @JoinColumn(nullable = false)
-    private Doctor headDoctor;
+    private Doctor headDoctor; // owning side
 
     @ManyToMany
     private Set<Doctor> doctors = new HashSet<>();

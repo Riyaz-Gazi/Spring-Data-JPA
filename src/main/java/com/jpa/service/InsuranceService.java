@@ -1,8 +1,8 @@
 package com.jpa.service;
 
 import com.jpa.entity.Insurance;
-import com.jpa.entity.InsuranceRepository;
 import com.jpa.entity.Patient;
+import com.jpa.repository.InsuranceRepository;
 import com.jpa.repository.PatientRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
